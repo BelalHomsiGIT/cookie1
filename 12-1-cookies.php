@@ -13,7 +13,7 @@
     }
     //Delete the cookie 'by set time in minus'-Reset by default color
     if( $_SERVER['REQUEST_METHOD'] == 'POST' && isset ($_POST['delCookie']) ){
-        $bgPage = $_POST['myColor'];
+        //$bgPage = $_POST['myColor'];
         setcookie('bgColorPage',$bgPage,time()-3600,'/');
         $bgPage=$bgdefaultColor;
     }
